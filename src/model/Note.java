@@ -1,17 +1,18 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Note {
     private String id;
     private String title;
     private String description;
-    private Date date;
+    private LocalDate date;
 
     public Note() {
     }
 
-    public Note(String id, String title, String description, Date date) {
+    public Note(String id, String title, String description, LocalDate date) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -42,11 +43,11 @@ public class Note {
         this.description = description;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
